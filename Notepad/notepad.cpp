@@ -141,14 +141,12 @@ void Notepad::on_actionCut_triggered()
 #endif
 }
 
-
 void Notepad::on_actionPaste_triggered()
 {
 #if QT_CONFIG(clipboard)
     ui->textEdit->paste();
 #endif
 }
-
 
 void Notepad::on_actionUndo_triggered()
 {
@@ -159,8 +157,6 @@ void Notepad::on_actionRedo_triggered()
 {
     ui->textEdit->redo();
 }
-
-
 
 void Notepad::on_actionFont_triggered()
 {
